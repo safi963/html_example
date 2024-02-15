@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: cithit/roseaw:latest
+        image: cithit/wanes-test1:latest
         ports:
         - containerPort: 80  # Expose NGINX on port 80
 
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: wanes-service
 spec:
   selector:
     app: nginx
